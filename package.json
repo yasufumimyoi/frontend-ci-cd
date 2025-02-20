@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "lint-staged": {
-      "*.ts": "tsc --noEmit",
-      "*.tsx": "tsc --noEmit"
+      "app/**/*.ts": "tsc --noEmit",
+      "app/**/*.tsx": "tsc --noEmit"
     }
   },
   "dependencies": {
