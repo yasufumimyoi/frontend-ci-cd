@@ -8,10 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "lint-staged": {
-      "**/*.{js,ts,tsx}": [
-        "eslint --fix",
-        "prettier --write"
-      ]
+      "*.ts": "tsc --noEmit",
+      "*.tsx": "tsc --noEmit"
     }
   },
   "dependencies": {
