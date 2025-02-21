@@ -135,7 +135,7 @@ function myFunction() {
   let unusedVariable; // 未使用の変数
   console.log("Function called");
 }
-
+aaaa
 myFunction();
 
 // index.jsaaaa
