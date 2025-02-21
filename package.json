@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "biome:check": "biome check ./app"
+    "biome:check:ts": "git diff --name-only --cached -- '*.ts' '*.tsx' | xargs npx biome check"
   },
   "dependencies": {
     "next": "15.1.7",

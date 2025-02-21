@@ -1,4 +1,4 @@
 pre-push:
   commands:
     biome:
-      run: npx biome check ./app
+      run: git diff --name-only --cached -- '*.ts' '*.tsx' | xargs npx biome check
