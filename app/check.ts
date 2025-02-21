@@ -1,3 +1,5 @@
+import { Akaya_Kanadaka } from "next/font/google";
+
 const test = "error" // ← セミコロンなし（Prettier ルール違反）
 
 console.log(test) // ← 未使用の変数（ESLint ルール違反）
@@ -11,6 +13,7 @@ console.log( foo.bar );
 // example.ts
 consoleaaa
 a
+]Akaya_Kanadaka
 // 型エラーを発生させるために、number型にstringを代入
 let numberVariable: number = "this is a string";  // 型 'string' を型 'number' に割り当てることはできません
 
