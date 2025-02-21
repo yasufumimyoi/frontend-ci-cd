@@ -62,7 +62,8 @@ function myFunction() {
 
 myFunction();
 
-// index.js
+// index.jsaaaa
+aaaa
 const message = "Hello, world!";
 console.log(message);
 
