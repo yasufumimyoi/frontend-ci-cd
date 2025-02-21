@@ -1,4 +1,4 @@
 pre-push:
   commands:
     biome:
-      run: npx biome check ./app
+      run: npx biome check --write ./app
