@@ -2,3 +2,6 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npm run lint-staged
+
+echo "PATH: $PATH"
+echo "NODE_PATH: $NODE_PATH"
