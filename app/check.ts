@@ -134,7 +134,7 @@ console.log(message);
 function myFunction() {
   let unusedVariable; // 未使用の変数
   console.log("Function called");
-}
+}あああ
 aaaaaaa
 myFunction();亜fdjあああさlfじゃslkdあああ
 
