@@ -7,13 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint-staged": {
-      "*.{ts,tsx}": [
-        "tsc --noEmit",
-        "eslint --fix"
-      ]
-    }
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },  
   "dependencies": {
     "next": "15.1.7",
     "react": "^19.0.0",
