@@ -136,7 +136,7 @@ function myFunction() {
   console.log("Function called");
 }
 aaaa
-myFunction();
+myFunction();亜fdjさlfじゃslkd
 
 // index.jsaaaa
 aaaaaaあああ
