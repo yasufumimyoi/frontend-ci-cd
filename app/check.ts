@@ -11,7 +11,8 @@ console.log( foo.bar );
 console.log( foo.bar );
 
 // example.ts
-consoleaaa
+consoleaaaaaa
+
 ああああ
 aaaaああ
 
