@@ -63,8 +63,8 @@ function myFunction() {
 myFunction();
 
 // index.jsaaaa
-aaaa
-const message = "Hello, world!";
+aaaaaa
+const message = "Helaaalo, world!";
 console.log(message);
 
 function myFunction() {
