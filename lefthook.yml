@@ -1,4 +1,4 @@
 pre-push:
   commands:
     biome:
-      run: find ./app -name '*.ts' -o -name '*.tsx' -print0 | xargs -0 npx biome check
+      run: npx biome check ./app
