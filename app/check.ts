@@ -12,6 +12,7 @@ console.log( foo.bar );
 
 // example.ts
 consoleaaa
+ああああ
 aaaaああ
 
 // 型エラーを発生させるために、number型にstringを代入
