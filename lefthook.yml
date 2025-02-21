@@ -1,4 +1,5 @@
 pre-push:
   commands:
     check:
-      run: git diff --name-only --cached -- '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}' | xargs npx biome check ./app
+      glob: '*.{js,ts,tsx}'
+      run: npx biome check --no-errors-on-unmatched --files-ignore-unknown=true <files>
