@@ -1,4 +1,9 @@
+# pre-push:
+#   commands:
+#     biome:
+#       run: npx biome check --write ./app
 pre-push:
   commands:
-    biome:
-      run: npx biome check --write ./app
+    check:
+      glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
+      run: npx biome check --no-errors-on-unmatched --files-ignore-unknown=true ./app
