@@ -2,8 +2,12 @@
 #   commands:
 #     biome:
 #       run: npx biome check --write ./app
+# pre-push:
+#   commands:
+#     check:
+#       glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
+#       run: npx biome check --no-errors-on-unmatched --files-ignore-unknown=true ./app
 pre-push:
   commands:
-    check:
-      glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
-      run: npx biome check --no-errors-on-unmatched --files-ignore-unknown=true ./app
+    lint-staged:
+      run: npx lint-staged

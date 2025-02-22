@@ -9,6 +9,12 @@
     "lint": "next lint",
     "biome:check:ts": "git diff --name-only --cached -- '*.ts' '*.tsx' | xargs npx biome check"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npx biome check --apply",
+      "npx tsc --noEmit"
+    ]
+  },
   "dependencies": {
     "next": "15.1.7",
     "react": "^19.0.0",
