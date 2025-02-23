@@ -125,7 +125,7 @@ function greet(name: string): void {
 }
 
 greet(123); // 引数 '123' は型 'string' に割り当てることができません
-
+aazs
 const message = "Hello, world!";
 console.log(message);
 

@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "biome:check:ts": "git diff --name-only --cached -- '*.ts' '*.tsx' | xargs npx biome check"
+    "lint": "next lint"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
