@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-
+import { screen } from '@storybook/testing-library';
 import { Button } from './Button';
+import { expect } from '@storybook/jest';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -51,3 +52,8 @@ export const Small: Story = {
     label: 'Button',
   },
 };
+
+Small.play = async () => {
+  await screen.findByTestId('button');
+  expect(Button);
+}

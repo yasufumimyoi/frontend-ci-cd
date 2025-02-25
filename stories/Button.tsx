@@ -27,6 +27,7 @@ export const Button = ({
   return (
     <button
       type="button"
+      data-testid="button"
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       {...props}
     >

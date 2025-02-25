@@ -17,6 +17,8 @@
     ]
   },
   "dependencies": {
+    "@storybook/jest": "^0.2.3",
+    "@storybook/testing-library": "^0.2.2",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -26,12 +28,12 @@
     "@chromatic-com/storybook": "^3.2.4",
     "@eslint/eslintrc": "^3",
     "@storybook/addon-essentials": "^8.5.8",
-    "@storybook/addon-interactions": "^8.5.8",
+    "@storybook/addon-interactions": "^8.6.0",
     "@storybook/addon-onboarding": "^8.5.8",
     "@storybook/blocks": "^8.5.8",
     "@storybook/nextjs": "^8.5.8",
     "@storybook/react": "^8.5.8",
-    "@storybook/test": "^8.5.8",
+    "@storybook/test": "^8.6.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
