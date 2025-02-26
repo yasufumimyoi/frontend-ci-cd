@@ -3,6 +3,7 @@ import { fn } from '@storybook/test';
 import { screen } from '@storybook/testing-library';
 import { Button } from './Button';
 import { expect } from '@storybook/jest';
+import { userEvent, within } from "@storybook/testing-library";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -51,9 +52,10 @@ export const Small: Story = {
     size: 'small',
     label: 'Button',
   },
-};
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const button = await canvas.findByTestId('button')
 
-Small.play = async () => {
-  await screen.findByTestId('button');
-  expect(Button);
-}
+    await userEvent.click(button);
+  },
+};
